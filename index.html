@@ -1,141 +1,383 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <meta charset="utf-8">
-  <title>Unique Hood Merch</title>
-    <link rel="stylesheet" href="Css/style.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Andre's Homepage</title>
+
+  <!-- External CSS Links From Websites -->
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  <!-- Custom Fonts from Google -->
+  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?fi5rcamily=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,100,300' >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" >
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:200,400,700">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- External Links From Internal Folders -->
+  <link rel="stylesheet" href="/css/master.css">
+  <link rel="stylesheet" href="css/custom.css" >
+  <link rel="stylesheet" href="css/sign_up.css" >
+  <link rel="stylesheet" href="css/contact_form.css" >
+
+  <!-- External JavaScript From Website -->
+  <script src="https://use.fontawesome.com/20ab91acc4.js"></script>
 </head>
+
 <body>
-  <nav id="navigation" class="nav-section">
-    <a href="#">
-      <div class="header-logo">
-        <img src="" alt="">
-        LOGO
-      </div>
-    </a>
-    <div class="navigation-links">
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Giving Back</a></li>
-        <li><a href="#">Learned
-            <ul>
-              <li><a href="#">Terms</a></li>
-              <li><a href="#">Reflection</a></li>
+
+  <!-- Navigation Bar Container -->
+  <nav id="siteNav" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+      <!-- Logo and responsive toggle -->
+      <div class="navbar-header">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <span class="glyphicon glyphicon-fire"></span>
+          LOGO
+        </a>
+        <!-- Responsive Navigation Button -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div><!-- /.navbar-header -->
+
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#about_me">About Me</a>
+          </li>
+          <li>
+            <a href="#giving_back">Giving Back</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learned <span class="caret"></span></a>
+            <ul class="dropdown-menu" aria-labelledby="about-us">
+              <li><a href="terms_page.html">Terms</a></li>
+              <li><a href="#">Reflections</a></li>
               <li><a href="#">Know My Brothers</a></li>
-            </ul></a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
-    </div>
+              <li><a href="dice.html">Dice Game</a></li>
+              <li><a href="simon.html">Simon Game</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#contact_me">Contact</a>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+
+    </div><!-- /.container -->
   </nav>
-  <header id="header-container" class="header-section" <section id="intro-container" class="intro-section">
-    <h1>Andre Sterling</h1>
-    <h2>Summer 1</h2>
-    <h3>Rich 3</h3>
-    <p>
-      Join Me On My Journey
-    </p>
-    <a href="#">Learn More</a>
+
+
+
+
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1>Andre Sterling</h1>
+        <h2>Summer 1</h2>
+        <h3>Rich-3</h3>
+        <p>Join Me On My Journey Through The Rest Of The Program And Experience The New Updates.</p>
+        <a id="registration" href="#" class="btn btn-primary btn-lg">Get Involved</a>
+      </div>
+    </div>
   </header>
-  <section id="introSection" class="section-container intro-container">
-    <img src="" />
-    <h2 class="section-heading">Completely synergize resource taxing relationships</h2>
-    <p class="text-light">Welcome Sentence(s)</p>
+
+
+  <!-- Modal Section -->
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="cont">
+      <div class="form sign-in">
+        <h2>Welcome back,</h2>
+        <label>
+          <span>Email</span>
+          <input type="email" />
+        </label>
+        <label>
+          <span>Password</span>
+          <input type="password" />
+        </label>
+        <p class="forgot-pass">Forgot password?</p>
+        <button type="button" class="submit">Sign In</button>
+        <button type="button" class="fb-btn">Connect with <span>facebook</span></button>
+      </div>
+      <div class="sub-cont">
+        <div class="img">
+          <div class="img__text m--up">
+            <h2>New here?</h2>
+            <p>Sign up and discover a great amount of new opportunities!</p>
+          </div>
+          <div class="img__text m--in">
+            <h2>One of us?</h2>
+            <p>If you already has an account, just sign in. We've missed you!</p>
+          </div>
+          <div class="img__btn">
+            <span class="m--up">Sign Up</span>
+            <span class="m--in">Sign In</span>
+          </div>
+        </div>
+        <div class="form sign-up">
+          <h2>Time to feel like home,</h2>
+          <label>
+            <span>Name</span>
+            <input type="text" />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" />
+          </label>
+          <label>
+            <span>Password</span>
+            <input type="password" />
+          </label>
+          <button type="button" class="submit">Sign Up</button>
+          <button type="button" class="fb-btn">Join with <span>facebook</span></button>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://dribbble.com/shots/3306190-Login-Registration-form" target="_blank" class="icon-link">
+      <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
+    </a>
+    <a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
+      <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
+    </a>
+  </div>
+
+
+  <!-- Intro Section -->
+  <section class="intro">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <span class="glyphicon glyphicon-apple" style="font-size: 60px"></span>
+          <h2 class="section-heading">Completely synergize resource taxing relationships</h2>
+          <p class="text-light">Welcome Sentence(s)</p>
+        </div>
+      </div>
+    </div>
   </section>
 
-  <section id="about-me-container" class="about-me-section">
-    <img src="" alt="">
-    <h2 class="section-header">About Me</h2>
-    <p class="lead text-muted">Holisticly <a href="#">great</a>predominate extensible testing procedures for reliable supply chains. Dynamically innovate resource-leveling customer service for state of the art customer service.</p>
-    <a href="#" class="btn btn-primary btn-lg">Portfolio</a>
+  <!-- Content 1 -->
+  <section id="about_me" class="content">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img class="img-responsive img-circle center-block" src="images/microphone.jpg" alt="">
+        </div>
+        <div class="col-sm-6">
+          <h2 class="section-header">About Me</h2>
+          <p class="lead text-muted" <a href="#"></a>My name is Andre Sterling I'm from Richmond California. I grew up in Easter Hill I played football for the Richmond Steelers. I love music and sports. I'm in highschool I go to Making Waves Academy and play on the basketball team. And I'm a part time rapper. I'm working on making a clothing line and want to open my own store and sell the clothes I make..</p>
+          <a href="portfolio.html" class="btn btn-primary btn-lg">Portfolio</a>
+        </div>
+
+      </div>
+    </div>
   </section>
-  <section id="giving-back-container" class="giving-back-section">
-    id="giveBackSection" class="section-container give-back-container">
-    <h2 class="section-header">Giving Back</h2>
-    <p class="lead text-light">Vlogs, Community Norms Game, Resource Directory Or Explanation Of Why Giving Back Is Good With A Link To Site That Can Give Back To Visitors</p>
-    <a href="#" class="btn btn-default btn-lg">Vlog Page</a>
-    <img src="" alt=""/>
+
+  <!-- Content 2 -->
+  <section id="giving_back" class="content content-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2 class="section-header">Giving Back</h2>
+          <p class="lead text-light">Vlogs, Community Norms Game, Resource Directory Or Explanation Of Why Giving Back Is Good With A Link To Site That Can Give Back To Visitors</p>
+          <a href="#" class="btn btn-default btn-lg">Vlog Page</a>
+        </div>
+        <div class="col-sm-6">
+          <img class="img-responsive img-circle center-block" src="images/iphone.jpg" alt="">
+        </div>
+
+      </div>
+    </div>
   </section>
-  <section id="explore-container" class="explore-section">
-    <a>
-<article id="termsArticle" class="article-container terms-container">
-<h3>
+
+  <!-- Promos -->
+  <div class="container-fluid">
+    <div class="row promo">
+      <a href="terms_page.html">
+        <article class="col-md-4 promo-item item-1">
+          <h3>
             Terms
-</h3>
-
-</article>
-</a>
-<a>
-<article id="reflectionArticle" class="article-container reflection-container">
-<h3>
-            Reflections
-</h3>
-
-</article>
-</a>
-
-<a>
-<article id="myBrothersArticle" class="article-container my-brothers-container">
-<h3>
-            Know My Brothers
-</h3>
-
-</article>
-</a>
-
-    <article id="terms-container" class="term-section">
-
-      <article id="reflection-container" class="reflection-section">
-
-        <article id="myBrothers-container" class="myBrothers-section">
-
+          </h3>
         </article>
-  </section>
-  <section id="future-container" class="future-section">
-    <img src="" />
-    <h2 class="section-header"> My Future Plans</h2>
-    <p class="lead text-muted">Paragraph of your next steps, what you would like to get done through program or after high school, or what you want to be in the future.</p>
-    <a href="#" class="btn btn-primary btn-lg">Get Information</a>
-  </section>
-  <footer id="footer container" class="footer-section">
-    <h1 class="form-section-header">CONTACT</h1>
-    <div>
-    <form class="contact-form" role="form" method="post" action="">
-    <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
-    <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
-    <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
-    <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-    <div class="button">
-    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+      </a>
+      <a href="#">
+        <article class="col-md-4 promo-item item-2">
+          <h3>
+            Reflections
+          </h3>
+        </article>
+      </a>
+
+      <a href="#">
+        <article class="col-md-4 promo-item item-3">
+          <h3>
+            Know My Brothers
+          </h3>
+        </article>
+      </a>
     </div>
-    </button>
-    </form>
+  </div>
+
+  <!-- Content 3 -->
+  <section class="content content-3">
+    <div class="container">
+      <h2 class="section-header"><span class="glyphicon glyphicon-pushpin text-primary"></span><br> My Future Plans</h2>
+      <p class="lead text-muted">After highschool I play to go onto collage and play football or basketball. And I will be a bigger rapper. When I am done with collage I plan to open and run my own store selling my clothing brand products.</p>
+      <a href="#" class="btn btn-primary btn-lg">Get Information</a>
     </div>
-    <div class="direct-contact-container">
-    <ul class="contact-list">
-    <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Seattle | WA</span></i></li>
-    <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-    <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
-    </ul>
-                  <hr>
-                  <ul class="social-media-list">
-           <li><a href="#" target="_blank" class="contact-icon">
-           <i class="fa fa-github" aria-hidden="true"></i></a>
-           </li>
-           <li><a href="#" target="_blank" class="contact-icon">
-           <i class="fa fa-twitter" aria-hidden="true"></i></a>
-           </li>
-           <li><a href="#" target="_blank" class="contact-icon">
-           <i class="fa fa-instagram" aria-hidden="true"></i></a>
-           </li>
-           <li><a href="#" target="_blank" class="contact-icon">
-           <i class="fa fa-codepen" aria-hidden="true"></i></a>
-           </li>
-           </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer">
+
+    <!-- Contact Us -->
+    <div id="contact_me" class="contact">
+      <div class="container">
+        <section id="contact">
+
+          <h1 class="form-section-header">CONTACT</h1>
+
+          <div class="contact-wrapper">
+
+            <!--   CONTACT PAGE LEFT   -->
+
+            <form class="form-horizontal" role="form" method="post" action="contact.php">
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="">
+                </div>
+              </div>
+
+              <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message"></textarea>
+
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="button">
+                  <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                </div>
+
+              </button>
+
+            </form>
+
+            <!--       CONTACT PAGE RIGHT       -->
+
+            <div class="direct-contact-container">
+
+              <ul class="contact-list">
+                <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Richmond | CA</span></i></li>
+
+                <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(510) 688-5061</a></span></i></li>
+
+                <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">andre.sterling@hgs.hiddengeniusproject.org</a></span></i></li>
+
+              </ul>
+              <hr>
+
+              <ul class="social-media-list">
+                <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-github" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                </li>
+                <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-codepen" aria-hidden="true"></i></a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+
+        </section>
+
+
+      </div>
+    </div>
+
+    <!-- Copyright etc -->
+    <div class="small-print">
+      <div class="container">
+        <p>Copyright &copy; Example.com 2015</p>
+      </div>
     </div>
 
   </footer>
+  <script>
+    document.querySelector('.img__btn').addEventListener('click', function() {
+      document.querySelector('.cont').classList.toggle('s--signup');
+    });
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("registration");
+    // var modalImg = document.getElementById("img01");
+    var captionText = document.getElementById("caption");
+    img.onclick = function() {
+      modal.style.display = "block";
+      // modalImg.src = this.src;
+      captionText.innerHTML = this.alt;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+  </script>
+
+  <!-- jQuery -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom Javascript -->
+  <script src="js/custom.js"></script>
+
 </body>
 
 </html>
