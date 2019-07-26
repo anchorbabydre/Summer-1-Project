@@ -1,0 +1,14 @@
+.navbar-default{
+   background-color: red;
+}
+
+body {
+  color: black;
+  background-color: red;
+}
+
+li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+}
