@@ -4,6 +4,7 @@
   font-weight: 400;
   src: local("Open Sans"), local("OpenSans"), url(http://themes.googleusercontent.com/static/fonts/opensans/v6/cJZKeOuBrn4kERxqtaUH3bO3LdcAZYWl9Si6vvxL-qU.woff) format("woff");
 }
+
 html, body {
   height: 100%;
   background-color: #FEF6E1;
@@ -39,10 +40,12 @@ label {
   padding: 5px;
   background-color: white;
 }
+
 .toggle:hover {
   cursor: pointer;
   background-color: #f2f2f2;
 }
+
 .toggle:active {
   background-color: #d9d9d9;
 }
@@ -98,12 +101,15 @@ section {
 .term {
   padding: 1em;
 }
+
 .term a {
   color: white;
 }
+
 .term a:hover, .term a:active, .term a:visited {
   color: white;
 }
+
 .term:first-child {
   -moz-border-radius-topleft: 5px;
   -webkit-border-top-left-radius: 5px;
@@ -112,6 +118,7 @@ section {
   -webkit-border-top-right-radius: 5px;
   border-top-right-radius: 5px;
 }
+
 .term:last-child {
   -moz-border-radius-bottomleft: 5px;
   -webkit-border-bottom-left-radius: 5px;
@@ -120,6 +127,7 @@ section {
   -webkit-border-bottom-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
 .term:hover {
   background-color: #404040;
 }
@@ -142,9 +150,11 @@ section {
   padding: 5px 10px;
   margin-right: 5px;
 }
+
 .tag:last-child {
   margin-right: 0;
 }
+
 .tag:hover {
   background-color: #233172;
   cursor: pointer;

@@ -1,5 +1,4 @@
-[
-  {
+[{
     "name": "Candidate species",
     "description": "A plant or animal considered for possible addition to the List of Endangered and Threatened Species. These are taxa for which the Fish and Wildlife Service has on file sufficient information on biological vulnerability and threat(s) to support issuance of a proposal to list, but issuance of a proposed rule is currently precluded by higher priority listing actions.",
     "related": ["CCA", "CCAA", "Endangered Species Act"],
@@ -53,20 +52,20 @@
     "synonyms": []
   },
   {
-  "name": "Habitat fragmentation",
-  "description": "When an animal’s homeland or range is split up into smaller pieces. <br><br>For example, if we place a road in the middle of a large field, we have fragmented the field into two pieces. If any animal’s den is on one side of the road and its food is on the other, the animal must now take the risk of crossing the road in order to survive.",
+    "name": "Habitat fragmentation",
+    "description": "When an animal’s homeland or range is split up into smaller pieces. <br><br>For example, if we place a road in the middle of a large field, we have fragmented the field into two pieces. If any animal’s den is on one side of the road and its food is on the other, the animal must now take the risk of crossing the road in order to survive.",
     "related": ["habitat"],
     "synonyms": []
   },
   {
     "name": "Delist",
-		"description": "To remove a species from the list of federally-protected threatened and endangered species under the Endangered Species Act.",
+    "description": "To remove a species from the list of federally-protected threatened and endangered species under the Endangered Species Act.",
     "related": [],
     "synonyms": []
   },
   {
     "name": "Habitat",
-		"description": "The place in nature with distinct features (such as short grass, wet ground, dry rocks, etc.) that an animal calls home because it provides what it needs to survive: food, water and shelter.",
+    "description": "The place in nature with distinct features (such as short grass, wet ground, dry rocks, etc.) that an animal calls home because it provides what it needs to survive: food, water and shelter.",
     "related": ["range", "habitat fragmentation"],
     "synonyms": []
   },

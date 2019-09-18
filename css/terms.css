@@ -32,7 +32,7 @@
 
 .navigation a:hover {
   background: #FF0000;
-;
+  ;
 }
 
 @media all and (max-width: 800px) {
@@ -40,6 +40,7 @@
     justify-content: space-around;
   }
 }
+
 @media all and (max-width: 600px) {
   .navigation {
     -webkit-flex-flow: column wrap;
@@ -59,10 +60,9 @@
   }
 }
 
-
 body {
-    background-image: url("https://i.imgur.com/Gwdn8Ey.png?1");
-    background-repeat: repeat;
+  background-image: url("https://i.imgur.com/Gwdn8Ey.png?1");
+  background-repeat: repeat;
   margin: 0px;
 }
 
@@ -103,7 +103,7 @@ h1 {
   text-align: center;
   font-family: 'Oswald';
   padding: 0px;
-  font-size:3.2em;
+  font-size: 3.2em;
   color: black;
   margin-top: -55px;
 }
@@ -132,7 +132,6 @@ h5 {
 }
 
 /*links*/
-
 a:link {
   color: #FF0000;
 }
@@ -145,14 +144,14 @@ a:visited {
   color: white;
 }
 
-
 /*paragraphs*/
 p {
   font-size: 1em;
   text-indent: 25px;
   font-family: Verdana;
   color: white;
-  padding; 10px;
+  padding;
+  10px;
   line-height: 1.4em;
 }
 
@@ -180,7 +179,7 @@ p {
 }
 
 .flexdirection {
-  background-color:#FF0000;
+  background-color: #FF0000;
   padding: 10px;
   margin-top: 0px;
   width: 100%;
@@ -191,12 +190,15 @@ p {
   padding: 10px;
   width: 100%;
 }
-p{
+
+p {
   color: black;
 }
-a{
+
+a {
   color: black;
 }
+
 .flex-flow {
   background-color: #FF0000;
   padding: 10px;

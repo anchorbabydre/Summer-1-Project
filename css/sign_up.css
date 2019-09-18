@@ -1,16 +1,25 @@
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 10000; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 10000;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
 }
 
 /* Modal Content (image) */
@@ -42,13 +51,23 @@
 }
 
 @-webkit-keyframes zoom {
-  from {-webkit-transform:scale(0)}
-  to {-webkit-transform:scale(1)}
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
 }
 
 @keyframes zoom {
-  from {transform:scale(0)}
-  to {transform:scale(1)}
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
 }
 
 /* The Close Button */
@@ -70,11 +89,12 @@
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
   .modal-content {
     width: 100%;
   }
 }
+
 .tip {
   font-size: 20px;
   margin: 40px auto 50px;
@@ -113,9 +133,10 @@
   transition: transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
+
 .cont.s--signup .sub-cont {
   -webkit-transform: translate3d(-640px, 0, 0);
-          transform: translate3d(-640px, 0, 0);
+  transform: translate3d(-640px, 0, 0);
 }
 
 button {
@@ -139,6 +160,7 @@ button {
   height: 100%;
   padding-top: 360px;
 }
+
 .img:before {
   content: '';
   position: absolute;
@@ -152,6 +174,7 @@ button {
   transition: transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
+
 .img:after {
   content: '';
   position: absolute;
@@ -161,10 +184,12 @@ button {
   height: 100%;
   background: rgba(0, 0, 0, 0.6);
 }
+
 .cont.s--signup .img:before {
   -webkit-transform: translate3d(640px, 0, 0);
-          transform: translate3d(640px, 0, 0);
+  transform: translate3d(640px, 0, 0);
 }
+
 .img__text {
   z-index: 2;
   position: absolute;
@@ -178,26 +203,32 @@ button {
   transition: transform 1.2s ease-in-out;
   transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
 }
+
 .img__text h2 {
   margin-bottom: 10px;
   font-weight: normal;
 }
+
 .img__text p {
   font-size: 14px;
   line-height: 1.5;
 }
+
 .cont.s--signup .img__text.m--up {
   -webkit-transform: translateX(520px);
-          transform: translateX(520px);
+  transform: translateX(520px);
 }
+
 .img__text.m--in {
   -webkit-transform: translateX(-520px);
-          transform: translateX(-520px);
+  transform: translateX(-520px);
 }
+
 .cont.s--signup .img__text.m--in {
   -webkit-transform: translateX(0);
-          transform: translateX(0);
+  transform: translateX(0);
 }
+
 .img__btn {
   overflow: hidden;
   z-index: 2;
@@ -211,6 +242,7 @@ button {
   font-size: 15px;
   cursor: pointer;
 }
+
 .img__btn:after {
   content: '';
   z-index: 2;
@@ -222,6 +254,7 @@ button {
   border: 2px solid #fff;
   border-radius: 30px;
 }
+
 .img__btn span {
   position: absolute;
   left: 0;
@@ -235,17 +268,20 @@ button {
   transition: transform 1.2s;
   transition: transform 1.2s, -webkit-transform 1.2s;
 }
+
 .img__btn span.m--in {
   -webkit-transform: translateY(-72px);
-          transform: translateY(-72px);
+  transform: translateY(-72px);
 }
+
 .cont.s--signup .img__btn span.m--in {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
+
 .cont.s--signup .img__btn span.m--up {
   -webkit-transform: translateY(72px);
-          transform: translateY(72px);
+  transform: translateY(72px);
 }
 
 h2 {
@@ -260,6 +296,7 @@ label {
   margin: 25px auto 0;
   text-align: center;
 }
+
 label span {
   font-size: 12px;
   color: #cfcfcf;
@@ -294,6 +331,7 @@ input {
   border: 2px solid #d3dae9;
   color: #8fa1c7;
 }
+
 .fb-btn span {
   font-weight: bold;
   color: #455a81;
@@ -302,20 +340,22 @@ input {
 .sign-in {
   transition-timing-function: ease-out;
 }
+
 .cont.s--signup .sign-in {
   transition-timing-function: ease-in-out;
   transition-duration: 1.2s;
   -webkit-transform: translate3d(640px, 0, 0);
-          transform: translate3d(640px, 0, 0);
+  transform: translate3d(640px, 0, 0);
 }
 
 .sign-up {
   -webkit-transform: translate3d(-900px, 0, 0);
-          transform: translate3d(-900px, 0, 0);
+  transform: translate3d(-900px, 0, 0);
 }
+
 .cont.s--signup .sign-up {
   -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 .icon-link {
@@ -324,10 +364,12 @@ input {
   top: 50%;
   width: 32px;
 }
+
 .icon-link img {
   width: 100%;
   vertical-align: top;
 }
+
 .icon-link--twitter {
   left: auto;
   right: 5px;
